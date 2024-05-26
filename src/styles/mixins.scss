@@ -1,0 +1,76 @@
+@import "./global_colours.scss";
+
+@mixin mobile-500 {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+// Inter
+@mixin font-size-14 {
+  font-family: "Inter";
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+@mixin font-size-16 {
+  font-family: "Inter";
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+@mixin font-size-18 {
+  font-family: "Inter";
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+@mixin font-size-28 {
+  font-family: "Inter";
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+}
+
+
+// Common Inter Text Combinations
+@mixin text-14-500-black {
+  @include font-size-14;
+  font-weight: 500;
+  color: $primary-black;
+}
+
+@mixin text-14-500-white {
+  @include font-size-14;
+  font-weight: 500;
+  color: $primary-white;
+}
+
+@mixin text-16-400-black {
+  @include font-size-16;
+  font-weight: 400;
+  color: $primary-black;
+}
+
+@mixin text-16-500-white {
+  @include font-size-16;
+  font-weight: 500;
+  color: $primary-white;
+}
+
+@mixin text-18-500-white {
+  @include font-size-18;
+  font-weight: 500;
+  color: $primary-white;
+}
+
+@mixin text-18-600-white {
+  @include font-size-18;
+  font-weight: 600;
+  color: $primary-white;
+}
+
+@mixin text-28-500-white {
+  @include font-size-28;
+  font-weight: 500;
+  color: $primary-white;
+}

@@ -1,0 +1,27 @@
+@import "./mixins.scss";
+@import "./global_colours.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  max-width: 100vw;
+  min-height: 100vh;
+  font-display: swap;
+  background-color: $primary-black;
+}
+
+html {
+  font-size: 62.5%;
+
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}

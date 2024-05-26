@@ -1,0 +1,19 @@
+@import "../../styles/global_colours.scss";
+@import "../../styles/mixins.scss";
+
+.container {
+    padding: 6.9rem 37rem;
+    display: flex;
+    justify-content: center;
+
+    &_1 {
+        @include text-28-500-white;
+        margin-bottom: 1.2rem;
+    }
+
+    &_2 {
+        @include text-16-400-black;
+        color: $secondary-gray;
+        margin-bottom: 3rem;
+    }
+}

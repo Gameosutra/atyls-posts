@@ -1,0 +1,26 @@
+@import "../../../styles/global_colours.scss";
+@import "../../../styles/mixins.scss";
+
+.parent {
+    position: relative;
+}
+
+.container {
+    border: 1.5px solid $border-2;
+    background-color: $secondary-black;
+    @include text-16-400-black;
+    color: $secondary-gray;
+    padding: 1.2rem;
+    width: -webkit-fill-available;
+    border-radius: 4px;
+}
+
+.hoverimg {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+}
+
+.error {
+    border: 1.5px solid $primary-red;
+}

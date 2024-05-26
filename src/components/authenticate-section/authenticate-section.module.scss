@@ -1,0 +1,17 @@
+@import "../../styles/global_colours.scss";
+@import "../../styles/mixins.scss";
+
+.container {
+    color: $primary-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    &_img {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 4.9rem;
+    }
+}

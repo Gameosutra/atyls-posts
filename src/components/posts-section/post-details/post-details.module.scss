@@ -1,0 +1,76 @@
+@import "../../../styles/global_colours.scss";
+@import "../../../styles/mixins.scss";
+
+.container {
+    border: 2px solid $border-2;
+    background-color: $secondary-black;
+    padding: 2.4rem 2rem;
+    width: 100%;
+    margin-top: 1.6rem;
+    border-radius: 8px;
+
+    &_1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        &_left {
+            display: flex;
+
+            &_img {
+                width: 4.4rem;
+                height: 4.4rem;
+            }
+
+            &_values {
+                margin-left: 1.6rem;
+
+                &_1 {
+                    @include text-16-500-white;
+                    margin-bottom: 0.4rem;
+                }
+
+                &_2 {
+                    @include text-14-500-black;
+                    color: $secondary-gray;
+                }
+            }
+        }
+
+        &_img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &_2 {
+        border-radius: 8px;
+        background-color: $quatery-black;
+        padding: 1.6rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.4rem;
+
+        &_img {
+            width: 4.8rem;
+            height: 4.8rem;
+            margin-right: 1.6rem;
+        }
+
+        &_text {
+            @include text-16-400-black;
+            color: $secondary-gray;
+        }
+    }
+    &_3 {
+        &_img {
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+        span {
+            @include text-14-500-black;
+            color: $secondary-gray;
+            margin-left: 0.8rem;
+        }
+    }
+}
